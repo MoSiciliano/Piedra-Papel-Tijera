@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Red Hat Display', sans-serif;
+    box-sizing: content-box;
+}
+:root{
+    --clr--blue: #390fa2;
+    --clr--skyBlue: #7c6aa8;
+    --clr--blueWhite:  #97b1c4;
+    --clr--white: #ffffff;
+}
+body{
+
+    background-color: var(--clr--blue);
+    color: var(--clr--blueWhite)
+
+}
+.disabled{
+
+    display: none;
+
+}
+.container--header{
+
+    background-color: var(--clr--skyBlue);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size:2rem;
+    padding-inline: 5%;
+    padding-block: 2%;
+
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+}
+
+.title{
+
+    padding-inline: 5%;
+    
+}
+.container--instrucction{
+
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+
+}
+.counter{
+    background-color: var(--clr--skyBlue);
+    padding: 1rem 1rem;
+    border-radius: 1rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    font-weight: 500;
+
+   
+}
+.counter .name{
+    position: absolute;
+    line-height: 1;
+    padding: .5rem;
+    border-radius: .5rem;
+    border: 2px solid var(--clr--white);
+    background-color: var(--clr--blueWhite);
+    color: var(--clr--skyBlue)
+
+}
+
+.counter .player{
+    right:85%;
+}
+.counter .computer{
+    left:85%;
+}
+.counter .points{
+    font-size:1.5rem;
+    margin-bottom:0;
+}
+.counter--user{
+    cursor: pointer;
+}
+.couner--computer{
+    cursor: pointer;
+}
+
+.container--tools{
+    margin-block: 2%;
+}
+
+.tools{
+    display: flex;
+    flex-direction: block;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+}
+.tools .tool{
+    background-color: var(--clr--skyBlue);
+    border-color: var(--clr--blue);
+    cursor:pointer;
+}
+.container--results{
+    margin-top:10px;
+    font-weight: 650;
+}
+.btn--restart{
+    cursor:pointer;
+    line-height: 1rem;
+    background-color: var(--clr--skyBlue);
+    border-color: var(--clr--blue);
+    color:var(--clr--white);
+}
